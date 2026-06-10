@@ -130,3 +130,9 @@ Open and run `notebooks/model.ipynb`. This trains the pipeline, tunes the thresh
 - It is not a medical tool. It is just a student project a practice project.
 - Feature names and values must match exactly (e.g., `'Residence_type'` with capital R, `'formerly smoked'` lowercase).
 - Missing values in input are handled automatically by the pipeline's imputers.
+
+
+
+## Disclaimer
+This project is for educational purposes only. It is not intended for clinical 
+use or medical decision-making. Always consult a qualified medical professional.
