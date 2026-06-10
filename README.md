@@ -15,8 +15,8 @@ project/
 │       ├── y_train.csv
 │       └── y_test.csv
 ├── models/
-│   ├── model.pkl        # Trained pipeline (best estimator from RandomizedSearchCV)
-│   └── threshold.pkl    # Optimized classification threshold
+│   ├── model.pkl
+│   └── threshold.pkl
 ├── images/
 │   ├── stroke_vs_gender.png
 │   ├── stroke_vs_residence_type.png
@@ -141,37 +141,6 @@ Open and run `notebooks/preprocessing_and_eda.ipynb`. This downloads the dataset
 ### Step 2 — Train the Model
 
 Open and run `notebooks/model.ipynb`. This trains the pipeline, tunes the threshold, and saves `model.pkl` and `threshold.pkl`.
-
-### Step 3 — Run Inference
-
-```python
-import pickle
-import pandas as pd
-
-with open("models/model.pkl", "rb") as fp:
-    model = pickle.load(fp)
-with open("models/threshold.pkl", "rb") as fp:
-    threshold = pickle.load(fp)
-
-new_patient = pd.DataFrame([{
-    'age'               : 67,
-    'bmi'               : 36.6,
-    'avg_glucose_level' : 228.7,
-    'gender'            : 'Male',
-    'hypertension'      : 1,
-    'heart_disease'     : 0,
-    'ever_married'      : 'Yes',
-    'work_type'         : 'Private',
-    'Residence_type'    : 'Urban',
-    'smoking_status'    : 'formerly smoked'
-}])
-
-probability = model.predict_proba(new_patient)[:, 1][0]
-prediction  = int(probability >= threshold)
-
-print(f"Stroke Probability : {probability:.2f}")
-print(f"Risk Level         : {'High Risk' if prediction == 1 else 'Low Risk'}")
-```
 
 **Output:**
 ```
