@@ -123,12 +123,6 @@ Open and run `notebooks/preprocessing_and_eda.ipynb`. This downloads the dataset
 
 Open and run `notebooks/model.ipynb`. This trains the pipeline, tunes the threshold, and saves `model.pkl` and `threshold.pkl`.
 
-**Output:**
-```
-Stroke Probability : 0.77
-Risk Level         : High Risk
-```
-
 ---
 
 ## Notes
