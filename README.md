@@ -46,25 +46,6 @@ Source: [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/
 
 ---
 
-## Features
-
-| Feature | Type | Description |
-|---|---|---|
-| `age` | Numerical | Patient age (0.08 – 82) |
-| `bmi` | Numerical | Body Mass Index (201 missing values) |
-| `avg_glucose_level` | Numerical | Average blood glucose level (55.12 – 271.74) |
-| `gender` | Categorical | `Female`, `Male`, `Other` |
-| `hypertension` | Binary | `1` = yes, `0` = no |
-| `heart_disease` | Binary | `1` = yes, `0` = no |
-| `ever_married` | Categorical | `Yes`, `No` |
-| `work_type` | Categorical | `Private`, `Self-employed`, `Govt_job`, `children`, `Never_worked` |
-| `Residence_type` | Categorical | `Urban`, `Rural` |
-| `smoking_status` | Categorical | `formerly smoked`, `never smoked`, `smokes` (Unknown → NaN) |
-
-The `id` column is dropped before modeling.
-
----
-
 ## Notebooks
 
 ### 1. `preprocessing_and_eda.ipynb`
