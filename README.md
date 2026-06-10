@@ -108,7 +108,7 @@ Serializes `model.pkl` and `threshold.pkl` to the `models/` directory.
 ## Installation
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn kagglehub
+pip install -r requirements.txt
 ```
 
 ---
