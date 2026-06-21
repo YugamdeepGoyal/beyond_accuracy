@@ -136,3 +136,7 @@ Open and run `notebooks/model.ipynb`. This trains the pipeline, tunes the thresh
 ## Disclaimer
 This project is for educational purposes only. It is not intended for clinical 
 use or medical decision-making. Always consult a qualified medical professional.
+
+
+
+Note: Built while learning - newer projects reflect improved practices and fixed mistakes
